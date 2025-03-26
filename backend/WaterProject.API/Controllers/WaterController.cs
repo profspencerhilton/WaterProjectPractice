@@ -80,6 +80,9 @@ namespace WaterProject.API.Controllers
             return NoContent(); // 204 No Content means successful deletion
         }
 
+        [HttpGet("Ping")]
+        public IActionResult Ping() => Ok("Pong from deployed API");
+
 
     }
 }
